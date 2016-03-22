@@ -104,6 +104,7 @@ main>section:first-child{margin-bottom: 60px;}
     height: 301px;
     margin-bottom: 30px;
     position: relative;
+    background: url(../images/ltbig.jpg);
     display: inline-block;
 }
 .img1 div{
@@ -236,7 +237,8 @@ main>section:first-child{margin-bottom: 60px;}
     font-family: SimSun;
 }
 .lc p.first::first-letter{
-    padding-right: 2px;
+    padding-right: 7px;
+    margin-left: -5px;
     line-height: 1em;
     font-size: 70px;
     float: left;
@@ -247,7 +249,7 @@ main>section:first-child{margin-bottom: 60px;}
     text-indent: 2em;
 }
 .lc img{
-    padding: 16px 8px 16px 20px;
+    padding: 18px 8px 14px 16px;
     float: right;
 }
 
@@ -255,24 +257,66 @@ main>section:first-child{margin-bottom: 60px;}
     display: inline-block;
     width: 458px;
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
 }
 .rc .img2{position: relative}
 .rc .imgdesp{
+    box-sizing: border-box;
     position: absolute;
     width: 458px;
     height: 61px;
+    line-height: 44px;
+    padding: 9px 26px 8px;
     background-color: rgba(0,0,0,.3);
     left: 0;
-    bottom: 0;
+    bottom: 3px;
+}
+.rc .imgdesp span{
+    font-family: 'Microsoft YaHei';
+}
+.rc .imgdesp span.imgTitle{
+    color: #fff;
+    font-size: 26px;
+    padding: 4px 12px;
+    border-left: 3px solid #72b16a;
+}
+.rc .imgdesp span.imgSubTitle{
+    color: #72b16a;
+    font-style: italic;
+    font-size: 12px;
 }
 .rc .rb{
     width: 459px;
     height: 318px;
     background-color: #eeeed7;
     position: relative;
-    margin-top: 24px;
+    box-sizing: border-box;
+    margin-top: 28px;
+    padding: 30px 20px 30px 30px;
+}
+.rc .rb .lbt p{
+    font-size: 16px;
+    color: #5a5b5b;
+    line-height: 36px;
+    font-family: 'SimSun';
+}
+.rc .rb .lbt blockquote{
+    width: 199px;
+    height: 160px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.rc .rb .lbt blockquote span{
+    font-family: 'SimHei';
+    font-size: 72px;
+    color: #d45d5c;
+}
+.rc .rb .lbt p span:last-child{
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
 }
 .rc .rb .lbred{
     width: 260px;
@@ -282,7 +326,17 @@ main>section:first-child{margin-bottom: 60px;}
     bottom: 0;
     background-color: #d45d5c;
 }
-
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #10456b;
+    display: inline-block;
+}
+.space{
+    margin-right: 8px;
+}
 /* footer */
 footer{
     height: 61px;
