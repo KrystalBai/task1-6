@@ -289,7 +289,7 @@ main>section:first-child{margin-bottom: 60px;}
 .rc .rb{
     width: 459px;
     height: 318px;
-    background-color: #eeeed7;
+    background-color: #eeedd6;
     position: relative;
     box-sizing: border-box;
     margin-top: 28px;
@@ -301,17 +301,36 @@ main>section:first-child{margin-bottom: 60px;}
     line-height: 36px;
     font-family: 'SimSun';
 }
-.rc .rb .lbt blockquote{
+.rc .rb .rbquote{
+    box-sizing: border-box;
     width: 199px;
     height: 160px;
     position: absolute;
+    padding: 20px;
     right: 0;
     bottom: 0;
 }
-.rc .rb .lbt blockquote span{
+.rc .rb .rbquote span.qm:first-child{
+    left:-70px;
+    top:30px;
+}
+.rc .rb .rbquote span.qm:last-child{
+    right:0;
+    bottom: 14px;
+}
+.rc .rb .rbquote span.qm{
+    position: absolute;
     font-family: 'SimHei';
     font-size: 72px;
     color: #d45d5c;
+}
+.rc .rb .rbquote p.quote{
+    text-indent: 36px;
+    font-size: 14px;
+    font-style: italic;
+    color: #5a5b5b;
+    font-family: 'SimHei';
+    line-height: 16px;
 }
 .rc .rb .lbt p span:last-child{
     font-size: 12px;
@@ -321,10 +340,37 @@ main>section:first-child{margin-bottom: 60px;}
 .rc .rb .lbred{
     width: 260px;
     height: 160px;
+    padding: 40px 10px 34px;
+    box-sizing: border-box;
     position: absolute;
     left: 0;
     bottom: 0;
     background-color: #d45d5c;
+}
+.redL, .redR{
+    display: inline-block;
+    color: #fff;
+}
+.redL{
+    font-size: 110px;
+    line-height: 86px;
+    font-family: 'Microsoft YaHei';
+}
+.redR{
+    width: 140px;
+    word-wrap: break-word;
+    border-left: 2px solid #fff;
+    padding-left: 10px;
+}
+.redRT{
+    font-size: 21px;
+    font-family: 'SimHei';
+    font-style: italic;
+    line-height: 24px;
+}
+.redRB{
+    font-size: 12px;
+    font-family: SimHei;
 }
 .arrow-up {
     width: 0;
