@@ -51,7 +51,7 @@ a{
     text-decoration: none;
 }
 
-header,main,footer{
+header,main,footer,section{
     width: 892px;
     margin: 0 auto;
 }
@@ -94,15 +94,19 @@ header>span{
     right: 0;
 }
 
+/* IE不兼容 */
 /* main */
-main{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+/*main{*/
+    /*margin-top: 30px;*/
+    /*margin-bottom: 30px;*/
+/*}*/
 section{
     position: relative;
+    margin: 30px auto;
 }
-main>section:first-child{margin-bottom: 60px;}
+section .lt{
+    padding-bottom: 30px;
+}
 .img1{
     width: 641px;
     height: 301px;
@@ -187,7 +191,7 @@ main>section:first-child{margin-bottom: 60px;}
     font-size: 116px;
     color: #75b86b;
     font-family: 'Microsoft YaHei';
-    font-style: italic;
+    font-style: oblique;
     margin-top: 30px;
 }
 .exp div{
@@ -226,7 +230,7 @@ main>section:first-child{margin-bottom: 60px;}
 .lc h2>span{
     color: #f5e327;
     font-size: 72px;
-    font-style: italic;
+    font-style: oblique;
 }
 .lc h2.title{
     font-size: 33px;
@@ -287,7 +291,7 @@ main>section:first-child{margin-bottom: 60px;}
 }
 .rc .imgdesp span.imgSubTitle{
     color: #72b16a;
-    font-style: italic;
+    font-style: oblique;
     font-size: 12px;
 }
 .rc .rb{
@@ -310,41 +314,42 @@ main>section:first-child{margin-bottom: 60px;}
     width: 199px;
     height: 160px;
     position: absolute;
-    padding: 20px;
+    padding: 18px;
     right: 0;
     bottom: 0;
 }
 .rc .rb .rbquote span.qm:first-child{
-    left:-70px;
-    top:30px;
+    left:-63px;
+    top:34px;
 }
 .rc .rb .rbquote span.qm:last-child{
-    right:0;
-    bottom: 14px;
+    right:-21px;
+    bottom: 17px;
 }
 .rc .rb .rbquote span.qm{
     position: absolute;
     font-family: 'SimHei';
+    font-style: normal;
     font-size: 72px;
     color: #d45d5c;
 }
 .rc .rb .rbquote p.quote{
-    text-indent: 36px;
+    text-indent: 42px;
     font-size: 14px;
-    font-style: italic;
+    font-style: oblique;
     color: #5a5b5b;
     font-family: 'SimHei';
     line-height: 16px;
 }
 .rc .rb .lbt p span:last-child{
     font-size: 12px;
-    font-style: italic;
+    font-style: oblique;
     text-align: right;
 }
 .rc .rb .lbred{
     width: 260px;
     height: 160px;
-    padding: 40px 10px 34px;
+    padding: 40px 8px 34px;
     box-sizing: border-box;
     position: absolute;
     left: 0;
@@ -361,16 +366,20 @@ main>section:first-child{margin-bottom: 60px;}
     font-family: 'Microsoft YaHei';
 }
 .redR{
-    width: 140px;
-    word-wrap: break-word;
+    width: 158px;
+    height: 86px;
+    position: absolute;
+    left: 76px;
+    bottom: 32px;
     border-left: 2px solid #fff;
     padding-left: 10px;
 }
 .redRT{
     font-size: 21px;
     font-family: 'SimHei';
-    font-style: italic;
+    font-style: oblique;
     line-height: 24px;
+    margin-bottom: 4px;
 }
 .redRB{
     font-size: 12px;
